@@ -1,6 +1,8 @@
 import './App.css';
+import { useState } from 'react';
 import VehicleList from './VehicleList';
 import TrafficLight from './TrafficLight';
+
 
 function App() {
   // track the following state with a few useState hooks:
@@ -8,6 +10,8 @@ function App() {
   // lizardSize should be a number that starts out as 10
   // alienSize should be a number that starts out as 10
   // traffic is complicated. It should be an array of strings that starts out as ['car', 'truck']
+
+  const [lightColor, setLightColor] = useState('red');
 
   return (
     <div className="App">
@@ -65,4 +69,3 @@ function App() {
 }
 
 export default App;
-
