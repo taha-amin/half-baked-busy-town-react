@@ -11,7 +11,7 @@ function App() {
   // alienSize should be a number that starts out as 10
   // traffic is complicated. It should be an array of strings that starts out as ['car', 'truck']
 
-  const [lightColor, setLightColor] = useState('red');
+  const [lightColor] = useState('red');
 
   return (
     <div className="App">
